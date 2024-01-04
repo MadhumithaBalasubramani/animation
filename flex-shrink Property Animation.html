@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of CSS3 flex-shrink Property Animation</title>
+<style>
+.flex-container {
+	width: 300px;
+	height: 200px;
+	font-size: 32px;
+	border: 1px solid black;
+	display: -webkit-flex; /* Safari */		
+	display: flex; /* Standard syntax */
+}
+.flex-container div {
+	-webkit-flex: 1 1 200px; /* Safari 6.1+ */
+        -ms-flex: 1 1 200px; /* IE 10 */
+            flex: 1 1 200px; /* Standard syntax */
+}
+.item1 {
+	background: #e84d51;
+}
+.item2 {
+	background: #7ed636;
+}
+.item3 {
+	background: #2f97ff;
+}
+.animated {
+    -webkit-animation: test 4s infinite; /* Chrome, Safari, Opera */
+    animation: test 4s infinite;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes test {
+    50% {-webkit-flex-shrink: 2;}
+}
+/* Standard syntax */
+@keyframes test {
+    50% {flex-shrink: 2;}
+}
+</style>
+</head>
+<body>
+	<p><strong>Warning:</strong> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
+	<p><strong>Note:</strong> The flex-shrink property of the flex item2 is animating from its initial value "1" to "2", and back to the initial value "1" again up to infinite times.<p>
+	<div class="flex-container">
+        <div class="item1">1</div>
+        <div class="item2 animated">2</div>
+		<div class="item3">3</div>
+    </div>
+</body>
+</html>

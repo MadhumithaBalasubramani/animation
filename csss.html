@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    p{column-count: 3;
+    text-align: justify;
+    column-gap: 50px;
+    column-rule: 2px solid red;
+    column-fill:initial;}
+    @media screen and (min-width: 320px) and (max-width: 480px){
+        body{
+			background: #7ce7e1;
+		}
+        .imagesall .image1
+        {
+            width: 100%;
+            margin: 20px;
+        }
+        
+
+    }
+    /* Smartphones (portrait) ---------- */
+    @media screen and (max-width: 320px){
+        body{
+			background: #ffd280;
+		}
+        .imagesall .image1
+        {
+            width: 100%;
+            margin: 20px;
+        }
+    }
+    /* Smartphones (landscape) ---------- */
+    @media screen and (min-width: 321px){
+        body{
+			background: #9ddfbb;
+		}
+        .imagesall .image1
+        {
+            width: 100%;
+            margin: 20px;
+        }
+    }
+    /* tablets, iPads (portrait and landscape) ---------- */
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+        body{
+			background: #ffb497;
+		}
+    }
+    /* tablets, iPads (portrait) ---------- */
+    @media screen and (min-width: 768px){
+        body{
+			background: #f0e68c;
+		}
+        .imagesall .image1
+        {
+            width: 80%;
+            margin: 20px;
+        }
+    }
+    /* tablets, iPads (landscape) ---------- */
+    @media screen and (min-width: 1024px){
+        body{
+			background: #d6b3f4;
+		}
+        .imagesall .image1
+        {
+            width: 40%;
+            margin: 20px;
+        }
+    }
+    /* Desktops and laptops ---------- */
+    @media screen and (min-width: 1224px){
+        body{
+			background: #d8ff9d;
+		}
+        .imagesall .image1
+        {
+            width: 40%;
+            margin: 20px;
+        }
+    }
+    /* Large screens ---------- */
+    @media screen and (min-width: 1824px){
+        body{
+			background: #ffc0cb;
+		}
+    }
+
+div h1,ul {
+        display: flex;
+        flex-direction:row-reverse;
+        /*flex-basis: 40%;
+        flex-shrink:initial;
+        flex-grow: inherit;*/
+        flex-wrap: wrap;
+        width: 60%;
+        min-height: 30px;
+        border: 2px solid yellowgreen;
+        align-items: flex-end;
+        background-color: aqua;
+    }
+    li{
+        padding: 20px;
+        list-style: none;
+       
+    }
+    img:hover{
+        /*filter: blur(2px);*/
+        /*filter:drop-shadow(7px 5px 8px rgb(183, 188, 31));*/
+        filter:grayscale(50%) ;
+    }
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae officia assumenda aliquam, quae saepe, ipsum expedita quibusdam nesciunt quod quisquam consectetur culpa aut perspiciatis, debitis iusto numquam repellat. Alias, sunt!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex animi asperiores voluptates, numquam laudantium ipsam tempora vel nostrum possimus iusto libero doloribus quasi incidunt corporis eum? Minus accusamus voluptatum expedita.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe pariatur, placeat consequatur deleniti cum, nisi necessitatibus in dignissimos molestias ratione dicta. Dignissimos sapiente architecto accusantium quae animi, adipisci consectetur repudiandae.
+    </p>
+    <div>
+        <h1>Whytap</h1>
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>service</li>
+            <li>policy</li>
+            <li>company</li>
+            <li>terms</li>
+        </ul>
+    </div>
+    <div class="imagesall">
+    <div class="image1">
+    <img src="image/download.jpg" alt="globe">
+    </div>
+    <div class="image1">
+    <img src="image/cartoon.jpg" alt="">
+</div>
+<div>
+    <img src="image/nature.jpg" alt="">
+</div>
+<div class="image1">
+    <img src="image/pict.jpg" alt="">
+</div>
+<div class="image1">
+    <img src="image/cat.jpg" alt="">
+</div>
+<div class="image1">
+    <img src="image/tree.jpg" alt="">
+</div>
+</div>
+</body>
+</html>

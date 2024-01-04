@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of CSS background Property Animation</title>
+<style>
+.animated {
+    width: 300px;
+    height: 175px;
+    background: url("image/tree.jpg") no-repeat -50px -50px black;
+    background-size: 10%;
+    -webkit-animation: test 4s infinite; /* Chrome, Safari, Opera */
+    animation: test 4s infinite;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes test {
+	50% {	
+		background-color: floralwhite;
+		background-position: center;
+		background-size: 40%;
+	}
+}
+/* Standard syntax */
+@keyframes test {
+    50% {	
+		background-color: floralwhite;
+		background-position: center;
+		background-size: 40%;
+	}
+}
+</style>
+</head>
+<body>
+	<p><strong>Warning:</strong> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
+	<p><strong>Note:</strong> Among all the individual background properties only the background-color, background-position, and background-size properties are animatable in CSS. See the CSS <a href="https://www.google.com" target="_top">background</a> shorthand property for details.<p>
+	<div class="animated"></div>
+</body>
+</html>
